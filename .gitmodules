@@ -1,0 +1,3 @@
+[submodule "htdocs/protected/modules/eyedraw"]
+	path = htdocs/protected/modules/eyedraw
+	url = git@github.com:openeyes/eyedraw.git
