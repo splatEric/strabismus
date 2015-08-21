@@ -56,8 +56,8 @@ return array(
 			'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=strabismus',
 			'emulatePrepare' => true,
-			'username' => 'root',
-			'password' => 'pikachu',
+			'username' => 'homestead',
+			'password' => 'secret',
 			'charset' => 'utf8',
 			'tablePrefix' => 'tbl_',
 		),

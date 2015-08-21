@@ -50,14 +50,14 @@ $('.search-form form').submit(function(){
     <td class="odd">
       <ul class="count-list">
         <? foreach($op_stats['total_cats'] as $cat): ?>
-        <li><?= $cat['cat'] ?>:&nbsp;<?= $cat['count'] ?></li>
+        <li><?= @$cat['cat'] ?>:&nbsp;<?= @$cat['count'] ?></li>
 	<? endforeach ?>
       </ul>
     </td>
     <td class="even">
       <ul class="count-list">
         <? foreach($op_stats['cats_this_year'] as $cat): ?>
-        <li><?= $cat['cat'] ?>:&nbsp;<?= $cat['count'] ?></li>
+        <li><?= @$cat['cat'] ?>:&nbsp;<?= @$cat['count'] ?></li>
 	<? endforeach ?>
       </ul>
     </td>
