@@ -963,4 +963,9 @@ class AdultDataset extends CActiveRecord
         }
         return $ret;
     }
+
+    public function getEvent()
+    {
+    	return null;
+    }
 }

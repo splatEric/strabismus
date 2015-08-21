@@ -19,11 +19,13 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+		'application.modules.eyedraw.*',
 	),
 
 	'modules'=>array(
+		'eyedraw',
 		// uncomment the following to enable the Gii tool
-				'gii'=>array(
+		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'secret',
 		 	// If removed, Gii defaults to localhost only. Edit carefully to taste.
@@ -34,6 +36,37 @@ return array(
 
 	// application components
 	'components'=>array(
+		'clientScript' => array(
+			'packages' => array(
+				'eyedraw' => array(
+					'js' => array(
+						"js/dist/eyedraw.js",
+						"js/dist/oe-eyedraw.js"
+					),
+					'css' => array(
+						'css/oe-eyedraw.css'
+					),
+					'basePath' => 'application.modules.eyedraw.assets',
+					'depends' => array(
+						'jquery',
+						'mustache',
+						'eventemitter2'
+					),
+				),
+				'mustache' => array(
+					'js' => array(
+						"mustache.js",
+					),
+					'basePath' => 'application.modules.eyedraw.assets.components.mustache',
+				),
+				'eventemitter2' => array(
+					'js' => array(
+						"lib/eventemitter2.js",
+					),
+					'basePath' => 'application.modules.eyedraw.assets.components.eventemitter2',
+				),
+			),
+		),
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
