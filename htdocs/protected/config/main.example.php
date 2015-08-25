@@ -74,6 +74,7 @@ return array(
 		// uncomment the following to enable URLs in path-format
 				'urlManager'=>array(
 			'urlFormat'=>'path',
+			'showScriptName' => false,
 			'rules'=>array(
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
@@ -89,8 +90,8 @@ return array(
 			'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=strabismus',
 			'emulatePrepare' => true,
-			'username' => 'homestead',
-			'password' => 'secret',
+			'username' => '[placeholder]',
+			'password' => '[placeholder]',
 			'charset' => 'utf8',
 			'tablePrefix' => 'tbl_',
 		),
