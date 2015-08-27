@@ -2,7 +2,7 @@ Options +FollowSymLinks
 IndexIgnore */*
 
 RewriteEngine On
-#RewriteBase /
+RewriteBase /
 
 # Always rewrite asset requests
 RewriteRule ^file/.*$ index.php [L]

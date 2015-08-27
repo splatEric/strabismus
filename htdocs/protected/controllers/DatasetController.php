@@ -285,10 +285,15 @@ class DatasetController extends Controller
 			    $near++;
 			$total++;
 		}
-		$unwanted = intval(100 * ($over/$total));
-		$close = intval(100 * ($over/$total));
-		$ret = array('unwanted' => $unwanted, 'near' => $close);
-		return $ret;
+		if ($total) {
+			$unwanted = intval(100 * ($over/$total));
+			$close = intval(100 * ($over/$total));
+			$ret = array('unwanted' => $unwanted, 'near' => $close);
+			return $ret;
+		}
+		else {
+			array('unwanted' => 0, 'near' => 0);
+		}
 	}
 
 	public function getSafetyStats()

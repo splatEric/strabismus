@@ -1,0 +1,10 @@
+<VirtualHost *:80>
+  ServerName app.local
+  DocumentRoot /var/www/htdocs/
+  <Directory /var/www/htdocs/>
+    DirectoryIndex index.php index.html
+    AllowOverride All
+    Order allow,deny
+    Allow from all
+  </Directory>
+</VirtualHost>

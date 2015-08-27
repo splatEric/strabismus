@@ -1,4 +1,5 @@
 .DS_Store
+.vagrant
 htdocs/protected/runtime/*.log
 state.bin
 vendor/*

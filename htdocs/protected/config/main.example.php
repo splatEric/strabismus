@@ -90,8 +90,8 @@ return array(
 			'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=strabismus',
 			'emulatePrepare' => true,
-			'username' => '[placeholder]',
-			'password' => '[placeholder]',
+			'username' => 'strabismus',
+			'password' => 'strabismus',
 			'charset' => 'utf8',
 			'tablePrefix' => 'tbl_',
 		),
